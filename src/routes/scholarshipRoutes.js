@@ -1,7 +1,8 @@
 const express = require('express');
-const { getScholarships } = require('../controllers/scholarshipController');
 const router = express.Router();
 
-router.get('/', getScholarships);
+router.get('/', (req, res) => {
+    res.json({ message: 'Scholarships route' });
+});
 
 module.exports = router;

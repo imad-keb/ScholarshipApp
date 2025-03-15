@@ -25,6 +25,7 @@ app.listen(PORT, () => {
 
 
 const scholarshipRoutes = require('./routes/scholarshipRoutes');
+
 // Routes
 app.use('/api/scholarships', scholarshipRoutes);
 
